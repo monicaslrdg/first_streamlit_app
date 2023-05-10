@@ -59,11 +59,4 @@ if streamlit.button('Get Fruit Load List'):
   streamlit.dataframe(my_data_rows)
 
   
-#This means anithing will be running from here above
-streamlit.stop()
-# Allow the end user to add a fruit
-add_my_fruit = streamlit.text_input('What fruit fruit would you like to add?','Kiwi')
-streamlit.write('Thanks for adding ', add_my_fruit)
 
-#This will won't work for now
-my_cur.execute("insert into FRUIT_LOAD_LIST values (add_my_fruit)")
